@@ -22,12 +22,10 @@ serverSocket.bind(('',serverPort))
 serverSocket.listen(1)
 
 # FILL IN END
-count = 1
+
 # Server should be up and running and listening to the incoming connections
 while True:
-	#print 'Ready to serve...'
-	print count
-        count += 1
+        print 'Ready to serve...'
         
 	# Set up a new connection from the client
 	connectionSocket, addr = serverSocket.accept()
@@ -39,8 +37,6 @@ while True:
 	try:
 		# Receives the request message from the client
 		message = connectionSocket.recv(1024)
-
-               # print message
                 
 		# Extract the path of the requested object from the message
 		# The path is the second part of HTTP header, identified by [1]
