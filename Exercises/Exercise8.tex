@@ -1,0 +1,61 @@
+% Created 2016-04-22 fr. 14:52
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\author{Sindre Hansen}
+\date{\today}
+\title{Exercise 8}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.5.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+
+\section{Task 1}
+\label{sec-1}
+\begin{center}
+\begin{tabular}{lll}
+Service & Corresponding in IP & Corresponding in TCP\\
+\hline
+Full duplex & NO & YES\\
+Flow controls & NO & YES\\
+Error detection & YES & YES\\
+Error correction & NO & NO\\
+Framing & YES & YES\\
+Link access & NO & NO\\
+Reliable delivery & NO & YES\\
+\end{tabular}
+\end{center}
+
+\section{Task 2}
+\label{sec-2}
+If d$_{\text{drop}}$ < L/R then there will be a collision. The reason being that before one node finishes transmitting, it will start receiving from the other node.
+\section{Task 3}
+\label{sec-3}
+A wireless network is either in infrastructure mode or in ad-hoc mode. In infrastructure mode every host is connected to the network via a access point. In ad-hoc mode there's no such access point and every host provides their own routing, name translation etc.
+\section{Task 4}
+\label{sec-4}
+If a node attaches to the network in different points over time, it is defined as a mobile node. Thus, a node with a wireless connection is \textbf{not} necessarily mobile. The user is \textbf{not} mobile, since she is continuously connected to the internet through the same access point.
+
+\section{Task 5}
+\label{sec-5}
+d$_{\text{0}}$ = [[1,-1,1,-1,1,-1,1,-1]\\
+d$_{\text{1}}$ = [-1,1,-1,1,-1,1,-1,1]
+% Emacs 24.5.1 (Org mode 8.2.10)
+\end{document}

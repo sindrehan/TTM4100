@@ -1,0 +1,24 @@
+#+OPTIONS: toc:nil
+#+TITLE: Exercise 8
+
+* Task 1
+| Service           | Corresponding in IP | Corresponding in TCP |
+|-------------------+---------------------+----------------------|
+| Full duplex       | NO                  | YES                  |
+| Flow controls     | NO                  | YES                  |
+| Error detection   | YES                 | YES                  |
+| Error correction  | NO                  | NO                   |
+| Framing           | YES                 | YES                  |
+| Link access       | NO                  | NO                   |
+| Reliable delivery | NO                  | YES                  |
+
+* Task 2
+If d_drop < L/R then there will be a collision. The reason being that before one node finishes transmitting, it will start receiving from the other node.
+* Task 3
+A wireless network is either in infrastructure mode or in ad-hoc mode. In infrastructure mode every host is connected to the network via a access point. In ad-hoc mode there's no such access point and every host provides their own routing, name translation etc.
+* Task 4
+If a node attaches to the network in different points over time, it is defined as a mobile node. Thus, a node with a wireless connection is *not* necessarily mobile. The user is *not* mobile, since she is continuously connected to the internet through the same access point.
+
+* Task 5
+d_0 = [[1,-1,1,-1,1,-1,1,-1]\\
+d_1 = [-1,1,-1,1,-1,1,-1,1]
